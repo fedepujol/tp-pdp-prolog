@@ -96,8 +96,11 @@ platoRecomendadoPara(Persona, Plato) :-
 
 platoRecomendadoPara(Persona, Plato) :-
     not(diagnosticoPeligroso(Persona, Diagnostico)),
-    comidaSegunDiagnostico(Diagnostico, Plato)
-    comidaPreferida(Persona, Plato).    
+    comidaSegunDiagnostico(Diagnostico, Plato).
+
+platoRecomendadoPara(Persona, Plato) :-
+    not(diagnosticoPeligroso(Persona, _)),
+    comidaPreferida(Persona, Plato).
 
 % diagnosticoPeligroso(Persona, Diagnostico)
 diagnosticoPeligroso(Persona, Diagnostico) :-
