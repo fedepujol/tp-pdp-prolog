@@ -102,6 +102,12 @@ platoRecomendadoPara(Persona, Plato) :-
     not(diagnosticoPeligroso(Persona, _)),
     comidaPreferida(Persona, Plato).
 
+% Funcion que devuelve False, si se pregunta por benito. 
+% platoRecomendadoPara(Persona, Plato) :-
+%     not(diagnosticoPeligroso(Persona, Diagnostico)),
+%     comidaSegunDiagnostico(Diagnostico, Plato),
+%     comidaPreferida(Persona, Plato).
+
 % diagnosticoPeligroso(Persona, Diagnostico)
 diagnosticoPeligroso(Persona, Diagnostico) :-
     diagnostico(Persona, Diagnostico),
